@@ -127,6 +127,18 @@
     {% endfor %}
   </div>
 
+  {% if site.recaptcha.active == true %}
+  <div class="row field-row google-recaptcha">
+    {% if page.options.largeur_champ == "50% centré" %}
+      <div class="large-6 medium-12 small-12 large-centered columns">
+    {% else %}
+      <div class="large-12 medium-12 small-12 columns">
+    {% endif %}
+      <div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
+    </div>
+  </div>
+  {% endif %}
+
   <div class="row field-row">
     {% if page.options.largeur_champ == "50% centré" %}
       <div class="large-6 medium-12 small-12 large-centered columns">

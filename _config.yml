@@ -19,6 +19,9 @@ types:
 largeur_champs:
   - "100%"
   - "50% centré"
+recaptcha:
+  active: true
+  sitekey: '6LeaMSEUAAAAAJmcpcFK23eFKRoSFJEwyEzgzyDg'
 defaults:
   - scope:
       path: ''

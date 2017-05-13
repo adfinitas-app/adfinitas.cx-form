@@ -96,5 +96,10 @@ function isValidForm(jqueryFormSelector) {
       status = false;
     }
   });
+  if ($('.google-recaptcha').length !== 0) {
+    if (grecaptcha.getResponse().length === 0) {
+      status = false;
+    }
+  }
   return (status);
 }

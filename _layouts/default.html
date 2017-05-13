@@ -17,6 +17,9 @@
     <script src="/assets/js/vendor/what-input.js"></script>
     <script src="/assets/js/vendor/foundation.js"></script>
     <script src="/assets/js/global.js"></script>
+    {% if site.recaptcha.active == true %}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {% endif %}
     {% for source in layout.javascript %}
     <script src="{{ source }}"></script>
     {% endfor %}
